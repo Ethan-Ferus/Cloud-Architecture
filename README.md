@@ -126,3 +126,35 @@ Next, in the same file configure 2 NAT Gateways. A NAT Gateway enables outbound 
 
 <img width="469" height="210" alt="nat gateway 2" src="https://github.com/user-attachments/assets/17ddd33e-7824-41ff-8939-cb6d9db01d6e" />
 
+# database-layer.tf file:
+
+In this section,we'll be creating 2 rds databases. Databases are used to store data either SQL or NON-SQL and we'll be using an RDS database
+
+<img width="477" height="247" alt="private rds 1" src="https://github.com/user-attachments/assets/d28eda73-1f43-47f0-9a4c-18be764747bc" />
+
+<img width="313" height="82" alt="private rds instance class" src="https://github.com/user-attachments/assets/8ff138cf-de31-4e32-9d75-5edfecc39f97" />
+
+<img width="322" height="81" alt="private rds instance engine" src="https://github.com/user-attachments/assets/011e7aeb-cfa4-4be6-89b0-7dc101f45399" />
+
+<img width="388" height="79" alt="private rds instane engine version" src="https://github.com/user-attachments/assets/b7263714-6c7d-43df-b22d-2327e3aaaf28" />
+
+<img width="336" height="76" alt="private rds instance password" src="https://github.com/user-attachments/assets/20b9ce12-5264-4f5e-bb59-cc6b29b00b2e" />
+
+<img width="303" height="81" alt="private rds instance port" src="https://github.com/user-attachments/assets/d0f0b3a2-dca5-4837-9998-57723ba293f7" />
+
+<img width="298" height="82" alt="private rds instance az 1" src="https://github.com/user-attachments/assets/fe941b2b-d98e-4807-aaa5-4196e911b5c3" />
+
+
+<img width="477" height="250" alt="private rds 2" src="https://github.com/user-attachments/assets/0b26c0df-3456-48be-9487-7ae9d6015cae" />
+
+<img width="313" height="82" alt="private rds instance class" src="https://github.com/user-attachments/assets/94d4b8eb-81a4-48f8-9a52-d8433e076a71" />
+
+<img width="322" height="81" alt="private rds instance engine" src="https://github.com/user-attachments/assets/a0b493e6-6f44-418d-9fc1-ca1bd4835d32" />
+
+<img width="388" height="79" alt="private rds instane engine version" src="https://github.com/user-attachments/assets/6ca573df-4b4d-46af-9e06-ddbf0c30a92a" />
+
+<img width="336" height="76" alt="private rds instance password" src="https://github.com/user-attachments/assets/0ac0e85c-7cdb-4870-b78a-227731c01c00" />
+
+<img width="303" height="81" alt="private rds instance port" src="https://github.com/user-attachments/assets/107b2637-de12-4874-a92a-6d7adc44293d" />
+
+<img width="306" height="77" alt="private rds instance az 2" src="https://github.com/user-attachments/assets/4c9a904f-ab0b-4c05-80a3-582f4b247c05" />

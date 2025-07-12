@@ -158,3 +158,74 @@ In this section,we'll be creating 2 rds databases. Databases are used to store d
 <img width="303" height="81" alt="private rds instance port" src="https://github.com/user-attachments/assets/107b2637-de12-4874-a92a-6d7adc44293d" />
 
 <img width="306" height="77" alt="private rds instance az 2" src="https://github.com/user-attachments/assets/4c9a904f-ab0b-4c05-80a3-582f4b247c05" />
+
+# auto-scaling-groups.tf file:
+
+Next, open a new file and name it auto-scaling-groups.tf. This is where we will be configuring our auto scaling group resources
+
+An ASG (Auto Scaling Group) is a AWS service that automatically adjusts the number of compute resources (instances,etc)
+
+<img width="681" height="230" alt="public auto scaling group" src="https://github.com/user-attachments/assets/8106f513-02c3-4b7c-b9e6-1a850b67ac09" />
+
+<img width="696" height="216" alt="private auto scaling group" src="https://github.com/user-attachments/assets/fb80ae2e-a791-458d-a40a-6d3a5946b38b" />
+
+
+# route-table.tf file:
+
+Next, open a new file and name it route-table.tf. We'll be configuring our route tables and route table associations in this file
+
+A Route Table in AWS is a set of rules, called routes that determines where network traffic is directed within a VPC 
+
+<img width="484" height="230" alt="public route table" src="https://github.com/user-attachments/assets/59c05d88-3be2-4fbd-b4f8-6e84aca29f62" />
+
+<img width="592" height="78" alt="public route table association 1" src="https://github.com/user-attachments/assets/bdd93199-668d-4e7c-8b86-de6318058a61" />
+
+<img width="596" height="80" alt="public route table association 2" src="https://github.com/user-attachments/assets/dfdc21cd-3aa2-4071-b433-3fb671e94f77" />
+
+
+<img width="484" height="230" alt="private route table" src="https://github.com/user-attachments/assets/15c84f4a-2ece-4398-9296-e59c08aa1271" />
+
+<img width="597" height="84" alt="private route table association 1" src="https://github.com/user-attachments/assets/54b27740-c581-4400-8d06-f5bb9022cb4a" />
+
+<img width="598" height="79" alt="private route table association 2" src="https://github.com/user-attachments/assets/9e7d51bb-f5c0-4c89-ad4c-85aa05c647b2" />
+
+<img width="600" height="82" alt="private route table association 3" src="https://github.com/user-attachments/assets/fb239adb-9b44-466b-90f4-e0a274aae3d0" />
+
+<img width="596" height="81" alt="private route table association 4" src="https://github.com/user-attachments/assets/8aeefe99-787d-4cd2-9328-b147ce4d98d1" />
+
+
+# sg.tf file:
+
+Next, create a new file and name it sg.tf.This is where we'll be configuring our security groups
+
+A SG(Security Group) is a virtual firewall that controls inbound and outbound traffic to AWS resources-primarily EC2 instances.It acts at the instance level but not the subnet level
+
+<img width="531" height="343" alt="launch template security group 1" src="https://github.com/user-attachments/assets/324d1a28-191a-4535-9126-a786c5a863b9" />
+
+<img width="370" height="79" alt="launch template ingress from port" src="https://github.com/user-attachments/assets/389e4164-25c9-4dc8-9298-558117862be3" />
+
+<img width="351" height="83" alt="launch template ingress to port" src="https://github.com/user-attachments/assets/3e429fe8-b879-4230-be23-8bd36c80d876" />
+
+<img width="363" height="79" alt="launch template egress from port" src="https://github.com/user-attachments/assets/e7724947-fab7-4c17-81c9-3f66a8f68651" />
+
+<img width="349" height="83" alt="launch template egress to port" src="https://github.com/user-attachments/assets/5d00e4a1-d8b9-4957-b0ec-9157acba9e73" />
+
+<img width="525" height="349" alt="launch template security group 2" src="https://github.com/user-attachments/assets/34a9202a-ccc4-435f-92df-ac1a22904a11" />
+
+<img width="370" height="79" alt="launch template ingress from port" src="https://github.com/user-attachments/assets/2a22a9c6-4739-4f34-b761-382267708d5d" />
+
+<img width="351" height="83" alt="launch template ingress to port" src="https://github.com/user-attachments/assets/9c05be4b-f68e-42f8-8f41-7832ae4313b2" />
+
+<img width="363" height="79" alt="launch template egress from port" src="https://github.com/user-attachments/assets/c513d8a1-faff-4a30-a23a-81502d02c6f5" />
+
+<img width="349" height="83" alt="launch template egress to port" src="https://github.com/user-attachments/assets/95cd5459-535a-4815-9411-1a19884214a9" />
+
+<img width="531" height="351" alt="private rds security group" src="https://github.com/user-attachments/assets/965d8895-4a4b-4d80-8005-93a14a77a58f" />
+
+<img width="452" height="82" alt="private rds security group ingress from port" src="https://github.com/user-attachments/assets/4abd24a9-ee2c-450f-a678-cf846442e7da" />
+
+<img width="445" height="85" alt="private rds security group ingress to port" src="https://github.com/user-attachments/assets/2f24a7e0-f5cd-4db3-b038-7035e9c1acd8" />
+
+<img width="447" height="80" alt="private rds security group egress from port" src="https://github.com/user-attachments/assets/0424ab5a-a1f7-45df-8699-4f3e850f88cd" />
+
+<img width="428" height="82" alt="private rds security group egress to port" src="https://github.com/user-attachments/assets/aede5bea-458f-40f0-9b12-f2fc945145f4" />

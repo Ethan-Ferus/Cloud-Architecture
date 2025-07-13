@@ -229,3 +229,15 @@ A SG(Security Group) is a virtual firewall that controls inbound and outbound tr
 <img width="447" height="80" alt="private rds security group egress from port" src="https://github.com/user-attachments/assets/0424ab5a-a1f7-45df-8699-4f3e850f88cd" />
 
 <img width="428" height="82" alt="private rds security group egress to port" src="https://github.com/user-attachments/assets/aede5bea-458f-40f0-9b12-f2fc945145f4" />
+
+# terrafom deployment:
+
+Next in the VSCode terminal, please make sure the project has been initalised by using the terraform init command 
+
+Next , you should use the terraform plan command to make sure the resources configured will be deployed
+
+<img width="995" height="636" alt="terraform plan" src="https://github.com/user-attachments/assets/991fe248-2496-4fe8-8c52-ef361cd38a96" />
+
+<img width="1053" height="525" alt="terraform plans" src="https://github.com/user-attachments/assets/5c340408-6aa8-4399-900f-5c24555e5d65" />
+
+

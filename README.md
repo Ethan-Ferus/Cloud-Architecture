@@ -159,6 +159,11 @@ In this section,we'll be creating 2 rds databases. Databases are used to store d
 
 <img width="306" height="77" alt="private rds instance az 2" src="https://github.com/user-attachments/assets/4c9a904f-ab0b-4c05-80a3-582f4b247c05" />
 
+Next, in the same file create a db subnet group. This resource is a collection of subnets that tells Amazon RDS where it is allowed to place your database instance
+
+<img width="641" height="81" alt="aws db subnet group" src="https://github.com/user-attachments/assets/92c568d7-2612-439c-8f3c-2a010b3258c3" />
+
+
 # auto-scaling-groups.tf file:
 
 Next, open a new file and name it auto-scaling-groups.tf. This is where we will be configuring our auto scaling group resources
@@ -234,10 +239,33 @@ A SG(Security Group) is a virtual firewall that controls inbound and outbound tr
 
 Next in the VSCode terminal, please make sure the project has been initalised by using the terraform init command 
 
-Next , you should use the terraform plan command to make sure the resources configured will be deployed
+Next , you should use the terraform apply command once everything is configured 
 
-<img width="995" height="636" alt="terraform plan" src="https://github.com/user-attachments/assets/991fe248-2496-4fe8-8c52-ef361cd38a96" />
+<img width="986" height="598" alt="terraform apply " src="https://github.com/user-attachments/assets/a9dacabc-4dd1-47ca-aaf2-49c279256e77" />
 
-<img width="1053" height="525" alt="terraform plans" src="https://github.com/user-attachments/assets/5c340408-6aa8-4399-900f-5c24555e5d65" />
+<img width="733" height="585" alt="terraform applies" src="https://github.com/user-attachments/assets/97d4cdd5-23a8-4a37-b64b-500b66d08ea5" />
 
+# Services Deployed:
+Here is screenshots of all the resources deployed in my AWS account
 
+<img width="1119" height="404" alt="Launch Templates" src="https://github.com/user-attachments/assets/29e666a9-6114-48c1-90d3-5b53f19f53ee" />
+
+<img width="1126" height="249" alt="NAT gateways" src="https://github.com/user-attachments/assets/16b5ca59-17a2-4dce-8337-2c364609e30b" />
+
+<img width="1118" height="273" alt="IGW" src="https://github.com/user-attachments/assets/b00b6dfc-0286-43b3-a01c-725a357432ed" />
+
+<img width="1118" height="274" alt="Elastic IPs" src="https://github.com/user-attachments/assets/27f4374a-89bc-45b3-a13e-c78a30cfc572" />
+
+<img width="1119" height="406" alt="Auto Scaling Groups" src="https://github.com/user-attachments/assets/66f3d20a-c4f5-4129-83e6-5f7c4b7e763b" />
+
+<img width="1079" height="347" alt="database deployment" src="https://github.com/user-attachments/assets/e80aa4dc-77de-4582-8bda-1ae811368668" />
+
+<img width="1076" height="360" alt="db subnet group" src="https://github.com/user-attachments/assets/54bfb128-3139-4d6f-91db-94a39c8148e7" />
+
+<img width="1112" height="223" alt="VPC" src="https://github.com/user-attachments/assets/a1495940-aa12-4cdf-b64a-bb5b4a8f3b35" />
+
+<img width="1118" height="402" alt="Subnets" src="https://github.com/user-attachments/assets/1092d78b-b8f7-4047-be7b-588cd1d5a1c3" />
+
+<img width="1119" height="366" alt="Security Groups" src="https://github.com/user-attachments/assets/71a93495-ce75-4f38-9f2a-7991dd074643" />
+
+<img width="1116" height="341" alt="Route Tables" src="https://github.com/user-attachments/assets/8fe75715-fec4-44e5-8967-bfd1deaa2344" />
